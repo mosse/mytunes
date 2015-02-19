@@ -18,6 +18,7 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('enqueue', function(song){
+
       //set song in son
     }, this);
 
