@@ -27,7 +27,8 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('ended', function(song){
-
+        // change to the next song in the playlist,
+        // or do nothing, if the playlist is empty.
     }, this);
   }
 
