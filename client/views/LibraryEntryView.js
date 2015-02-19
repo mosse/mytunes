@@ -2,17 +2,22 @@
 var LibraryEntryView = Backbone.View.extend({
 
   tagName: 'tr',
+  //<i class="fa fa-plus-square-o"></i>
+  template: _.template('<td>(<%= artist %>)</td><td><%= title %></td>'),
 
-  template: _.template('<i class="fa fa-play-circle-o"></i><i class="fa fa-plus-square-o"></i><td>(<%= artist %>)</td><td><%= title %></td>'),
-
-  events: {
-    'click': function() {
-      this.model.play();
-    }
-  },
+  // events: {
+  //   'click': function(e) {
+  //     console.log(e);
+  //     this.model.play();
+  //   }
+  // },
 
   render: function(){
-    return this.$el.html(this.template(this.model.attributes));
-  }
+    console.log(this);
+    return this.$el.html(this.template(this.model.attributes))
+    .prepend(new PlayButtonView({model: this.model}).render());
+
+    }
+
 
 });
