@@ -1,10 +1,10 @@
-var EnqueueButtonView = Backbone.View.extend({
+var DequeueButtonView = Backbone.View.extend({
 
-  template: _.template('<i class="fa fa-plus-square-o"></i>'),
+  template: _.template('<i class="fa fa-minus-square-o"></i>'),
 
   events: {
     'click': function() {
-      this.model.enqueue();
+      this.model.dequeue();
     }
   },
 

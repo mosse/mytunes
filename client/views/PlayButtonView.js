@@ -3,7 +3,7 @@ var PlayButtonView = Backbone.View.extend({
   template: _.template('<i class="fa fa-play-circle-o inline"></i>'),
 
   events: {
-    'click': function(e) {
+    'click': function() {
       this.model.play();
     }
   },

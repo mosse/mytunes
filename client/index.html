@@ -24,9 +24,13 @@
     <script src="views/PlayerView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
+    <script src="views/SongQueueView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
     <script src="views/AppView.js"></script>
     <script src="views/PlayButtonView.js"></script>
     <script src="views/EnqueueButtonView.js"></script>
+    <script src="views/DequeueButtonView.js"></script>
+
 
 
     <script>
@@ -34,8 +38,9 @@
 
         // set up model objects
         var library = new Songs(songData);
+        var songQueue = new SongQueue();
 
-        var app = new AppModel({library: library});
+        var app = new AppModel({library: library, songQueue: songQueue});
 
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
