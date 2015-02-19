@@ -1,10 +1,10 @@
-var PlayButtonView = Backbone.View.extend({
+var EnqueueButtonView = Backbone.View.extend({
 
-  template: _.template('<i class="fa fa-play-circle-o inline"></i>'),
+  template: _.template('<i class="fa fa-plus-square-o"></i>'),
 
   events: {
     'click': function(e) {
-      this.model.play();
+      this.model.enqueue();
     }
   },
 
