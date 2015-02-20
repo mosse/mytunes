@@ -1,7 +1,13 @@
 body {
-  width: 500px;
-  height:100%;
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF3E0;
 }
+
+
 
 .fa {
  font-size: 2em;
@@ -10,7 +16,7 @@ body {
 
 .fa:hover{
   cursor:pointer;
-  color: red;
+  color: #FF9800;
 }
 
 .inline {
@@ -21,7 +27,9 @@ body {
   font-size:48px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight:700;
-  padding:10px 0 30px 0;
+  padding:10px 0 30px 10px;
+        background-color:rgba(0,0,0,0.4);
+
 
 }
 
@@ -34,19 +42,30 @@ audio {
   position:absolute;
   bottom:0;
   padding-bottom:20px;
-  color:#ff0;
+  padding-top: 20px;
+  background-color: #141414;
+  opacity: 0.75;
+
 }
 
 .artist {
   padding-left: 10px ;
   font-family: 'Open Sans', sans-serif;
   font-weight:300;
+        background-color:rgba(0,0,0,0.4);
+
 }
 
 .title{
   padding-left: 15px ;
+        background-color:rgba(0,0,0,0.4);
+
   font-family: 'Open Sans', sans-serif;
 
 }
 .red { color:red;}
 .black { color: black; }
+
+body {
+  margin: 0;
+}
